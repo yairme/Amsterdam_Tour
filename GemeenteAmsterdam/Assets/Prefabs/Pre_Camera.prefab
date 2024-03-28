@@ -153,3 +153,9 @@ MonoBehaviour:
   ZoomOutMin: 1
   ZoomOutMax: 10
   ZoomSpeed: 0.01
+  LeftLimit: -10
+  RightLimit: 10
+  TopLimit: 10
+  BottomLimit: -10
+  CameraDistaceLimit: 0
+  CameraBottomLimit: -10
