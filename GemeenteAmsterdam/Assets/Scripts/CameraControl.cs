@@ -4,9 +4,9 @@ public class CameraControl : MonoBehaviour
 {
     
     [Header("Camera Zoom")]
-    [SerializeField] private float ZoomOutMin;
-    [SerializeField] private float ZoomOutMax;
-    [SerializeField] private float ZoomSpeed;
+    [SerializeField] private float zoomOutMin;
+    [SerializeField] private float zoomOutMax;
+    [SerializeField] private float zoomSpeed;
 
     [Header("Camera Boundaries")]
     [SerializeField] private float leftLimit;
