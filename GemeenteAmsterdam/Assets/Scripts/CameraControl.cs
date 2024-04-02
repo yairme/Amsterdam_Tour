@@ -2,26 +2,21 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    private Vector3 touchStart;
-
+    
     [Header("Camera Zoom")]
     [SerializeField] private float ZoomOutMin;
     [SerializeField] private float ZoomOutMax;
     [SerializeField] private float ZoomSpeed;
 
     [Header("Camera Boundaries")]
-    [SerializeField] private float LeftLimit;
-    [SerializeField] private float RightLimit;
-    [SerializeField] private float TopLimit;
-    [SerializeField] private float BottomLimit;
-    private float CameraDistaceLimit = 0; // This will never change, this will stay at 0.
-    private float CameraBottomLimit = -10; // This is how far the camera is from the ground, and won't change.
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float leftLimit;
+    [SerializeField] private float rightLimit;
+    [SerializeField] private float topLimit;
+    [SerializeField] private float bottomLimit;
+
+    private float cameraDistaceLimit = 0; // This will never change, this will stay at 0.
+    private float cameraBottomLimit = -10; // This is how far the camera is from the ground, and won't change.
+    private Vector3 touchStart;
 
     // Update is called once per frame
     void Update()
@@ -46,16 +41,16 @@ public class CameraControl : MonoBehaviour
             Camera.main.transform.position += direction;
         }
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, LeftLimit, RightLimit), Mathf.Clamp(transform.position.y, BottomLimit, TopLimit), Mathf.Clamp(transform.position.z, CameraBottomLimit, CameraDistaceLimit));
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, leftLimit, rightLimit), Mathf.Clamp(transform.position.y, bottomLimit, topLimit), Mathf.Clamp(transform.position.z, cameraBottomLimit, cameraDistaceLimit));
     }
 
     void Zoom(float increment) { Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, ZoomOutMin, ZoomOutMax); } 
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(new Vector2(LeftLimit, TopLimit), new Vector2(RightLimit, TopLimit));
-        Gizmos.DrawLine(new Vector2(RightLimit, TopLimit), new Vector2(RightLimit, BottomLimit));
-        Gizmos.DrawLine(new Vector2(RightLimit, BottomLimit), new Vector2(LeftLimit, BottomLimit));
-        Gizmos.DrawLine(new Vector2(LeftLimit, BottomLimit), new Vector2(LeftLimit, TopLimit));
+        Gizmos.DrawLine(new Vector2(leftLimit, topLimit), new Vector2(rightLimit, topLimit));
+        Gizmos.DrawLine(new Vector2(rightLimit, topLimit), new Vector2(rightLimit, bottomLimit));
+        Gizmos.DrawLine(new Vector2(rightLimit, bottomLimit), new Vector2(leftLimit, bottomLimit));
+        Gizmos.DrawLine(new Vector2(leftLimit, bottomLimit), new Vector2(leftLimit, topLimit));
     }
 }
