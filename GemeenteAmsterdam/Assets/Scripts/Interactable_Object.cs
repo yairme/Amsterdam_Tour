@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class Interactable_Object : MonoBehaviour
 {
+    UnityEvent interactEvent;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-     
-        Interact();
+        if (interactEvent == null)
+            interactEvent = new UnityEvent();
 
+        interactEvent.AddListener(Ping);
     }
-
+    // Update is called once per frame
+    void Update() { Interact(); }
     public void Interact()
     {
         // Detect if we are interacting with a mouse
@@ -25,15 +28,14 @@ public class Interactable_Object : MonoBehaviour
             // Perform the raycast
             if (Physics.Raycast(ray, out hit))
             {
-                // If we hit this object
-                if (hit.transform == this.transform)
-                {
-                    // Do something
-                    Debug.Log("Object clicked with mouse");
-                }
+                if (hit.transform != this.transform) return;
+                Debug.Log("Object clicked with mouse");
+                interactEvent.Invoke();
             }
-            
         }
     }
-
+    public void Ping()
+    {
+        Debug.Log("Ping");
+    }
 }
