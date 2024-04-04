@@ -32,15 +32,11 @@ public class Interactable_Object : MonoBehaviour
             {
                 if (hit.transform == this.transform)
                 {
-                    Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
+                    Debug.Log("Interacted with " + this.name);
                     interactEvent.Invoke();
                 }
             }
         } 
-    }
-    public void Interact()
-    {
-
     }
 
     public void Ping()
