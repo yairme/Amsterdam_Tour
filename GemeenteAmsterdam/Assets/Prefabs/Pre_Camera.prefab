@@ -153,7 +153,9 @@ MonoBehaviour:
   zoomOutMin: 1
   zoomOutMax: 10
   zoomSpeed: 0.01
-  leftLimit: -10
-  rightLimit: 10
-  topLimit: 10
-  bottomLimit: -10
+  leftLimit: 0
+  rightLimit: 0
+  topLimit: 0
+  bottomLimit: 0
+  mapGameObject: {fileID: 0}
+  boundaryDistanceLimit: 2
