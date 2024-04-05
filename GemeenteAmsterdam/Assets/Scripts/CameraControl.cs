@@ -14,8 +14,9 @@ public class CameraControl : MonoBehaviour
     [SerializeField] private float topLimit;
     [SerializeField] private float bottomLimit;
 
-    [Header("Map Mesh")]
+    [Header("Map")]
     [SerializeField] private GameObject mapGameObject;
+    [SerializeField] private Transform startPoint;
 
     private float cameraDistanceLimit = 0; // This will never change, this will stay at 0.
     private float cameraBottomLimit = -10; // This is how far the camera is from the ground, and won't change.
@@ -23,7 +24,8 @@ public class CameraControl : MonoBehaviour
 
     private void Awake() 
     { 
-        SetCameraCenter(mapGameObject.transform.position);
+        Camera.main.orthographicSize = zoomOutMax; // Set the camera to the maximum zoom out value.
+        SetCameraCenter(startPoint.position);
         SpriteBounds(mapGameObject); 
     }
 
