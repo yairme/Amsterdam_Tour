@@ -150,12 +150,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef006fa600d113489ebf6942949b57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZoomOutMin: 1
-  ZoomOutMax: 10
-  ZoomSpeed: 0.01
-  LeftLimit: -10
-  RightLimit: 10
-  TopLimit: 10
-  BottomLimit: -10
-  CameraDistaceLimit: 0
-  CameraBottomLimit: -10
+  zoomOutMin: 1
+  zoomOutMax: 10
+  zoomSpeed: 0.01
+  leftLimit: -10
+  rightLimit: 10
+  topLimit: 10
+  bottomLimit: -10

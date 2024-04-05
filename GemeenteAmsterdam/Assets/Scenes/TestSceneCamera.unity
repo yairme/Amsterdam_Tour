@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 233894394}
   - component: {fileID: 233894393}
   m_Layer: 0
-  m_Name: 1000_F_285909049_R7giCxSP6YGGWFFNWzkTgvqwBEgQJ3vb_0
+  m_Name: TestImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
