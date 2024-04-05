@@ -14,7 +14,7 @@ public class CameraControl : MonoBehaviour
     [SerializeField] private float topLimit;
     [SerializeField] private float bottomLimit;
 
-    private float cameraDistaceLimit = 0; // This will never change, this will stay at 0.
+    private float cameraDistanceLimit = 0; // This will never change, this will stay at 0.
     private float cameraBottomLimit = -10; // This is how far the camera is from the ground, and won't change.
     private Vector3 touchStart;
 
@@ -41,7 +41,7 @@ public class CameraControl : MonoBehaviour
             Camera.main.transform.position += direction;
         }
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, leftLimit, rightLimit), Mathf.Clamp(transform.position.y, bottomLimit, topLimit), Mathf.Clamp(transform.position.z, cameraBottomLimit, cameraDistaceLimit));
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, leftLimit, rightLimit), Mathf.Clamp(transform.position.y, bottomLimit, topLimit), Mathf.Clamp(transform.position.z, cameraBottomLimit, cameraDistanceLimit));
     }
 
     void Zoom(float increment) { Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, ZoomOutMin, ZoomOutMax); } 
