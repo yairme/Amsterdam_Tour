@@ -34,7 +34,7 @@ public class CameraControl : MonoBehaviour
 
             float difference = currentMagnitude - prevMagnitude;
 
-            Zoom(difference * ZoomSpeed);
+            Zoom(difference * zoomSpeed);
         }
         else if (Input.GetMouseButton(0)) {
             Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -44,7 +44,7 @@ public class CameraControl : MonoBehaviour
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, leftLimit, rightLimit), Mathf.Clamp(transform.position.y, bottomLimit, topLimit), Mathf.Clamp(transform.position.z, cameraBottomLimit, cameraDistanceLimit));
     }
 
-    void Zoom(float increment) { Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, ZoomOutMin, ZoomOutMax); } 
+    void Zoom(float increment) { Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax); } 
 
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
