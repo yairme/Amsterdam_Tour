@@ -8,16 +8,14 @@ public class CameraControl : MonoBehaviour
     [SerializeField] private float zoomOutMax;
     [SerializeField] private float zoomSpeed;
 
-    [Header("Camera Boundaries")]
-    [SerializeField] private float leftLimit;
-    [SerializeField] private float rightLimit;
-    [SerializeField] private float topLimit;
-    [SerializeField] private float bottomLimit;
-
     [Header("Map")]
     [SerializeField] private GameObject mapGameObject;
     [SerializeField] private Transform startPoint;
 
+    private float leftLimit;
+    private float rightLimit;
+    private float topLimit;
+    private float bottomLimit;
     private float cameraDistanceLimit = 0; // This will never change, this will stay at 0.
     private float cameraBottomLimit = -10; // This is how far the camera is from the ground, and won't change.
     private Vector3 touchStart;
