@@ -26,8 +26,6 @@ public class CameraControl : MonoBehaviour
         SetCameraCenter(startPoint.position);
         SpriteBounds(mapGameObject); 
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) { touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition); }
@@ -52,13 +50,7 @@ public class CameraControl : MonoBehaviour
         }
         CameraBounds();
     }
-
-    /// <summary>
-    /// This function is used to zoom the camera in or out.
-    /// </summary>
-    /// <param name="increment">The amount to zoom in or out.</param>
     void Zoom(float increment) { Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax); } 
-
     /// <summary>
     /// Sets the camera bounds based on the sprite's bounds and the camera's extents.
     /// </summary>
@@ -92,7 +84,6 @@ public class CameraControl : MonoBehaviour
     /// </summary>
     /// <param name="center">The new center position for the camera.</param>
     private void SetCameraCenter(Vector3 center) { Camera.main.transform.position = new Vector3(center.x, center.y, Camera.main.transform.position.z); }
-
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(new Vector2(leftLimit, topLimit), new Vector2(rightLimit, topLimit));
@@ -100,6 +91,5 @@ public class CameraControl : MonoBehaviour
         Gizmos.DrawLine(new Vector2(rightLimit, bottomLimit), new Vector2(leftLimit, bottomLimit));
         Gizmos.DrawLine(new Vector2(leftLimit, bottomLimit), new Vector2(leftLimit, topLimit));
     }
-
 }
 
