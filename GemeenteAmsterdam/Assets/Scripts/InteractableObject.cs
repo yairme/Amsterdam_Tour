@@ -19,7 +19,18 @@ public class InteractableObject : MonoBehaviour
     void Update() 
     {         
         if (!isActive) return;
-        foreach (Touch touch in Input.touches) { if (touch.phase == TouchPhase.Began) { interactEvent.Invoke(); } }
+
+
+            if (Input.GetMouseButton(0))
+            {
+                Touch touch = Input.GetTouch(0);
+                if (touch.phase == TouchPhase.Began)
+                {
+                    interactEvent.Invoke();
+                }
+            }
+
+
     }
     public void Ping() { Debug.Log("Ping"); } //Test listener
     public void Pong() { Debug.Log("Pong"); } // Test listener

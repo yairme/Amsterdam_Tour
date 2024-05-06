@@ -28,7 +28,13 @@ public class CameraControl : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) { touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition); }
+        if (Input.touchCount == 1) 
+        { 
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                touchStart = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position); 
+            }
+        }
         if (Input.touchCount == 2) {
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
@@ -44,9 +50,13 @@ public class CameraControl : MonoBehaviour
             Zoom(difference * zoomSpeed);
             SpriteBounds(mapGameObject); 
         }
-        else if (Input.GetMouseButton(0)) {
-            Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position += direction;
+        else if (Input.touchCount == 1) {
+
+            if (Input.GetTouch(0).phase == TouchPhase.Moved) {
+
+                Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                transform.position += direction;
+            }
         }
         CameraBounds();
     }
