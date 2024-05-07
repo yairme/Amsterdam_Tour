@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.Events;
 using UnityEngine;
 using System;
@@ -7,8 +5,9 @@ using System;
 public class InteractableObject : MonoBehaviour
 {
     [SerializeField] private int Radius;
+    [SerializeField] private GameObject Child;
     [SerializeField] UnityEvent interactEvent;
-    private bool isActive;
+    [SerializeField] private bool isActive;
     public bool IsActive { get { return isActive; } set { isActive = value; } }
 
     void Start()
@@ -18,20 +17,24 @@ public class InteractableObject : MonoBehaviour
     // Update is called once per frame
     void Update() 
     {         
-        if (!isActive) return;
-
-
-            if (Input.GetMouseButton(0))
+        Child.SetActive(isActive);
+        if (isActive)
+        {
+            foreach (Touch touch in Input.touches)
             {
-                Touch touch = Input.GetTouch(0);
                 if (touch.phase == TouchPhase.Began)
                 {
                     interactEvent.Invoke();
                 }
             }
-
-
+        }
     }
+
+    private void SetActive(bool v)
+    {
+        throw new NotImplementedException();
+    }
+
     public void Ping() { Debug.Log("Ping"); } //Test listener
     public void Pong() { Debug.Log("Pong"); } // Test listener
 }
