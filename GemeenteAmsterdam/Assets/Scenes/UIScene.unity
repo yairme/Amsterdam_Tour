@@ -4403,7 +4403,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 610707798}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -4466,7 +4466,7 @@ GameObject:
   - component: {fileID: 564018355}
   - component: {fileID: 564018354}
   m_Layer: 5
-  m_Name: AnswerC
+  m_Name: Answer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4574,74 +4574,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564018352}
   m_CullTransparentMesh: 1
---- !u!1 &610707798
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 610707801}
-  - component: {fileID: 610707800}
-  - component: {fileID: 610707799}
-  m_Layer: 0
-  m_Name: CanvasManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &610707799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610707798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75373a1e337faec4b943f4d288135ea1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quizUI: {fileID: 0}
-  uiElements:
-  - {fileID: 556601824}
-  - {fileID: 1363756063}
-  - {fileID: 1378633779}
-  - {fileID: 875220204}
-  - {fileID: 1996037084}
---- !u!114 &610707800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610707798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d743d8eb5f2b1474193086a4ac469f99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvases:
-  - {fileID: 1161894302}
-  - {fileID: 2053376475}
-  - {fileID: 1712931325}
---- !u!4 &610707801
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 610707798}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 180.09618, y: 162.09247, z: -1.2724171}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7641,7 +7573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1209470570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8588,7 +8520,7 @@ GameObject:
   - component: {fileID: 1403824763}
   - component: {fileID: 1403824762}
   m_Layer: 5
-  m_Name: AnswerA
+  m_Name: Answer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8709,7 +8641,7 @@ GameObject:
   - component: {fileID: 1409622631}
   - component: {fileID: 1409622630}
   m_Layer: 5
-  m_Name: AnswerD
+  m_Name: Answer4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10795,7 +10727,7 @@ RectTransform:
   m_Father: {fileID: 2074373248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.2, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12396,7 +12328,7 @@ GameObject:
   - component: {fileID: 1865004953}
   - component: {fileID: 1865004952}
   m_Layer: 5
-  m_Name: AnswerB
+  m_Name: Answer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13735,7 +13667,6 @@ SceneRoots:
   - {fileID: 1560206182}
   - {fileID: 1573488800}
   - {fileID: 2140073024}
-  - {fileID: 610707801}
   - {fileID: 78552208}
   - {fileID: 1161894306}
   - {fileID: 2053376479}
