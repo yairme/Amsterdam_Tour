@@ -3,12 +3,19 @@ using UnityEngine.UI;
 
 public class UITransition : MonoBehaviour
 {
-    // Function to turn on or off a specified canvas element
-    public void ToggleCanvasElement(GameObject elementToToggle)
+    [SerializeField] private GameObject[] Layouts;
+    public void SetLayoutActive(string _layoutName) // Function to set the canvas active or inactive.
     {
-        if (elementToToggle != null)
+        foreach (GameObject Layout in Layouts) // Loop through all the canvases in the Canvases array.
         {
-            elementToToggle.SetActive(!elementToToggle.activeSelf);
+            if (Layout.name == _layoutName) // If the canvas name matches the name passed in the parameter.
+            {
+                Layout.SetActive(true); // Set the canvas active.
+            }
+            if (Layout.name != _layoutName) // If the canvas is active.
+            {
+                Layout.SetActive(false); // Set the canvas inactive.
+            }
         }
     }
 }
