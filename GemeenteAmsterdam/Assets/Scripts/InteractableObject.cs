@@ -6,35 +6,31 @@ public class InteractableObject : MonoBehaviour
 {
     [SerializeField] private int Radius;
     [SerializeField] private GameObject Child;
-    [SerializeField] UnityEvent interactEvent;
-    [SerializeField] private bool isActive;
-    public bool IsActive { get { return isActive; } set { isActive = value; } }
+    [SerializeField] private UnityEvent InteractEvent;
+    private bool IsItActive;
+    public bool IsActive { get => IsItActive;  set => IsItActive = value; } 
 
     void Start()
     {
-        if (interactEvent == null) { interactEvent = new UnityEvent(); }
+        if (InteractEvent == null) { InteractEvent = new UnityEvent(); }
     }
     // Update is called once per frame
     void Update() 
     {         
-        Child.SetActive(isActive);
-        if (isActive)
+        Child.SetActive(IsItActive);
+        if (IsItActive)
         {
             foreach (Touch touch in Input.touches)
             {
                 if (touch.phase == TouchPhase.Began)
                 {
-                    interactEvent.Invoke();
+                    InteractEvent.Invoke();
                 }
             }
         }
     }
-
     private void SetActive(bool v)
     {
         throw new NotImplementedException();
     }
-
-    public void Ping() { Debug.Log("Ping"); } //Test listener
-    public void Pong() { Debug.Log("Pong"); } // Test listener
 }
