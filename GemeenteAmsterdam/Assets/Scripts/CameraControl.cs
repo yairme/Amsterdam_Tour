@@ -28,8 +28,15 @@ public class CameraControl : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)) { touchStart = Camera.main.ScreenToWorldPoint(Input.mousePosition); }
-        if (Input.touchCount == 2) {
+        if (Input.touchCount == 1) 
+        { 
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                touchStart = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position); 
+            }
+        }
+        if (Input.touchCount == 2) 
+        {
             Touch touchZero = Input.GetTouch(0);
             Touch touchOne = Input.GetTouch(1);
 
@@ -44,9 +51,14 @@ public class CameraControl : MonoBehaviour
             Zoom(difference * zoomSpeed);
             SpriteBounds(mapGameObject); 
         }
-        else if (Input.GetMouseButton(0)) {
-            Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position += direction;
+        else if (Input.touchCount == 1) 
+        {
+
+            if (Input.GetTouch(0).phase == TouchPhase.Moved) {
+
+                Vector3 direction = touchStart - Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                transform.position += direction;
+            }
         }
         CameraBounds();
     }
@@ -55,7 +67,8 @@ public class CameraControl : MonoBehaviour
     /// Sets the camera bounds based on the sprite's bounds and the camera's extents.
     /// </summary>
     /// <param name="_gameObject">The GameObject whose sprite bounds will be used to calculate the camera bounds.</param>
-    private void SpriteBounds(GameObject _gameObject) { 
+    private void SpriteBounds(GameObject _gameObject) 
+    { 
 
         var _spriteRenderer = _gameObject.GetComponent<SpriteRenderer>();
         
@@ -73,7 +86,8 @@ public class CameraControl : MonoBehaviour
     /// <summary>
     /// This function is used to keep the camera within the defined bounds.
     /// </summary>
-    private void CameraBounds() { 
+    private void CameraBounds() 
+    { 
         transform.position = new Vector3(
         Mathf.Clamp(transform.position.x, leftLimit, rightLimit), 
         Mathf.Clamp(transform.position.y, bottomLimit, topLimit), 
@@ -84,7 +98,8 @@ public class CameraControl : MonoBehaviour
     /// </summary>
     /// <param name="center">The new center position for the camera.</param>
     private void SetCameraCenter(Vector3 center) { Camera.main.transform.position = new Vector3(center.x, center.y, Camera.main.transform.position.z); }
-    private void OnDrawGizmos() {
+    private void OnDrawGizmos() 
+    {
         Gizmos.color = Color.red;
         Gizmos.DrawLine(new Vector2(leftLimit, topLimit), new Vector2(rightLimit, topLimit));
         Gizmos.DrawLine(new Vector2(rightLimit, topLimit), new Vector2(rightLimit, bottomLimit));
