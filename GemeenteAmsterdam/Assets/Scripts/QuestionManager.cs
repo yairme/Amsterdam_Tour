@@ -17,9 +17,6 @@ public class QuestionManager : MonoBehaviour
 
     void Update()
     {
-        // Example: You can call NextQuestion() whenever you want to proceed to the next question
-        // For example, you can hook this up to a button click or a timer.
-        // For now, I'll just demonstrate by calling it in Update() after 3 seconds.
         if (Input.GetKeyDown(KeyCode.Space))
         {
             NextQuestion();

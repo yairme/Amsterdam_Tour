@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UITransition : MonoBehaviour
 {
-    public GameObject menuUI;
-
-    public void ShowMenu()
+    // Function to turn on or off a specified canvas element
+    public void ToggleCanvasElement(GameObject elementToToggle)
     {
-        menuUI.SetActive(true);
-    }
-        
-    public void GoBack()
-    {
-        menuUI.SetActive(false);
+        if (elementToToggle != null)
+        {
+            elementToToggle.SetActive(!elementToToggle.activeSelf);
+        }
     }
 }
