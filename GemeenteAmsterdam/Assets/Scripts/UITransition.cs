@@ -8,11 +8,11 @@ public class UITransition : MonoBehaviour
     {
         foreach (GameObject Layout in Layouts) // Loop through all the canvases in the Canvases array.
         {
-            if (Layout.name == _layoutName) // If the canvas name matches the name passed in the parameter.
+            if (Layout.name.ToLower() == _layoutName.ToLower()) // If the canvas name matches the name passed in the parameter.
             {
                 Layout.SetActive(true); // Set the canvas active.
             }
-            if (Layout.name != _layoutName) // If the canvas is active.
+            if (Layout.name.ToLower() != _layoutName.ToLower()) // If the canvas is active.
             {
                 Layout.SetActive(false); // Set the canvas inactive.
             }
