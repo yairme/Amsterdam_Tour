@@ -18,4 +18,11 @@ public class UITransition : MonoBehaviour
             }
         }
     }
+
+    public void ToggleUIElement(GameObject _UiElement) // Function to toggle the UI element active or inactive.
+    {
+        bool isActive = _UiElement.activeInHierarchy; // Get the current state of the UI element.
+
+        _UiElement.SetActive(!isActive); // Set the UI element to the opposite state.
+    }
 }
