@@ -29,8 +29,4 @@ public class InteractableObject : MonoBehaviour
             }
         }
     }
-    private void SetActive(bool v)
-    {
-        throw new NotImplementedException();
-    }
 }
