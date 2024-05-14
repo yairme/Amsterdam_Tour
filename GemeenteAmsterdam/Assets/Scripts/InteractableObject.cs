@@ -4,7 +4,6 @@ using System;
 
 public class InteractableObject : MonoBehaviour
 {
-    [SerializeField] private int Radius;
     [SerializeField] private GameObject Child;
     [SerializeField] private UnityEvent InteractEvent;
     private bool IsItActive;
