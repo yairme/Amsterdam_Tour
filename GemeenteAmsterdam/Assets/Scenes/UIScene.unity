@@ -334,7 +334,7 @@ Transform:
   m_GameObject: {fileID: 990755482}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 111.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -571,6 +571,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1156814043290740923, guid: 41921fdd19ee86a4098f3111bad43548, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1815610264}
+    - target: {fileID: 1156814043290740923, guid: 41921fdd19ee86a4098f3111bad43548, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1815610264}
     - target: {fileID: 1322118721702303020, guid: 41921fdd19ee86a4098f3111bad43548, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -685,6 +693,10 @@ PrefabInstance:
       objectReference: {fileID: 1815610264}
     - target: {fileID: 8187484119498398857, guid: 41921fdd19ee86a4098f3111bad43548, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1815610264}
+    - target: {fileID: 8187484119498398857, guid: 41921fdd19ee86a4098f3111bad43548, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1815610264}
     - target: {fileID: 8271921762640341723, guid: 41921fdd19ee86a4098f3111bad43548, type: 3}
