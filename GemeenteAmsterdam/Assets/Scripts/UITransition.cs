@@ -4,25 +4,25 @@ using UnityEngine.UI;
 public class UITransition : MonoBehaviour
 {
     [SerializeField] private GameObject[] Layouts;
-    public void SetLayoutActive(string _layoutName) // Function to set the canvas active or inactive.
+    public void SetLayoutActive(string _layoutName)
     {
-        foreach (GameObject Layout in Layouts) // Loop through all the canvases in the Canvases array.
+        foreach (GameObject Layout in Layouts)
         {
-            if (Layout.name.ToLower() == _layoutName.ToLower()) // If the canvas name matches the name passed in the parameter.
+            if (Layout.name.ToLower() == _layoutName.ToLower()) 
             {
-                Layout.SetActive(true); // Set the canvas active.
+                Layout.SetActive(true);
             }
-            if (Layout.name.ToLower() != _layoutName.ToLower()) // If the canvas is active.
+            if (Layout.name.ToLower() != _layoutName.ToLower())
             {
-                Layout.SetActive(false); // Set the canvas inactive.
+                Layout.SetActive(false);
             }
         }
     }
 
-    public void ToggleUIElement(GameObject _UiElement) // Function to toggle the UI element active or inactive.
+    public void ToggleUIElement(GameObject _UiElement)
     {
-        bool isActive = _UiElement.activeInHierarchy; // Get the current state of the UI element.
+        bool isActive = _UiElement.activeInHierarchy;
 
-        _UiElement.SetActive(!isActive); // Set the UI element to the opposite state.
+        _UiElement.SetActive(!_UiElement.activeInHierarchy);
     }
 }
