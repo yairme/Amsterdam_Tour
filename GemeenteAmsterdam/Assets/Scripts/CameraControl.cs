@@ -18,11 +18,12 @@ public class CameraControl : MonoBehaviour
     private float bottomLimit;
     private float cameraDistanceLimit = 0; // This will never change, this will stay at 0.
     private float cameraBottomLimit = -10; // This is how far the camera is from the ground, and won't change.
+    private float startDistance = 300;
     private Vector3 touchStart;
 
     private void Awake() 
     { 
-        Camera.main.orthographicSize = zoomOutMax; // Set the camera to the maximum zoom out value.
+        Camera.main.orthographicSize = startDistance; // Set the camera a good distance away from the map.
         SetCameraCenter(startPoint.position);
         SpriteBounds(mapGameObject); 
     }

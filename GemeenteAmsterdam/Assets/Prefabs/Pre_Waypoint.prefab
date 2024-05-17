@@ -173,6 +173,7 @@ MonoBehaviour:
   InteractEvent:
     m_PersistentCalls:
       m_Calls: []
+  IsItActive: 1
   eventPos:
     x: 0
     y: 0

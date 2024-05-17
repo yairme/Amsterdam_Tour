@@ -9,14 +9,13 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] private double Range;
     [SerializeField] private GameObject Child;
     public UnityEvent InteractEvent;
-    private bool IsItActive;
+    private bool IsItActive = true;
     private PlayerLocation PlayerLocation;
     [HideInInspector] public Vector2d eventPos;
     void Start()
     {
         if (InteractEvent == null) { InteractEvent = new UnityEvent(); }
     }
-    // Update is called once per frame
     void Update() 
     {         
         PlayerLocation = GameObject.Find("Pre_MapManager").GetComponent<PlayerLocation>();
@@ -26,9 +25,18 @@ public class InteractableObject : MonoBehaviour
 
         if (distance < Range) { IsItActive = true; }
         else { IsItActive = false; }
-
+        
         Child.SetActive(IsItActive);
-    }
 
-    private void OnMouseDown() { if (IsItActive) { InteractEvent.Invoke(); } }
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                if (IsItActive)
+                {
+                    InteractEvent.Invoke();
+                }
+            }
+        }
+    }
 }
