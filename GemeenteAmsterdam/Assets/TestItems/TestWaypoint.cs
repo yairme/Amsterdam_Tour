@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Test_Waypoint : MonoBehaviour
 {
-    public void ColorChange()
+    public void Ping()
     {
-        GetComponent<Renderer>().material.color = Color.green;
+        Debug.Log("Ping");
+    }
+    public void Pong()
+    {
+        Debug.Log("Pong");
     }
 }

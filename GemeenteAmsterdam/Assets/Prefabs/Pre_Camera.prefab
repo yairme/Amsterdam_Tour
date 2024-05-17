@@ -150,12 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef006fa600d113489ebf6942949b57f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOutMin: 1
-  zoomOutMax: 10
+  zoomOutMin: 100
+  zoomOutMax: 1200
   zoomSpeed: 0.01
-  leftLimit: 0
-  rightLimit: 0
-  topLimit: 0
-  bottomLimit: 0
   mapGameObject: {fileID: 0}
-  boundaryDistanceLimit: 2
+  startPoint: {fileID: 0}

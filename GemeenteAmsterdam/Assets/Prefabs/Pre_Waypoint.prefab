@@ -168,8 +168,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ef3c47e864eeb4393576d6c35cb1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Range: 10
   Child: {fileID: 5768957352007925050}
   InteractEvent:
     m_PersistentCalls:
       m_Calls: []
-  IsItActive: 1
+  eventPos:
+    x: 0
+    y: 0
