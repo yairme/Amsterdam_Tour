@@ -270,6 +270,10 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4770752213832405553, guid: a6beaab711080864f94e5854309f8a30, type: 3}
+      propertyPath: _spawnScale
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770752213832405553, guid: a6beaab711080864f94e5854309f8a30, type: 3}
       propertyPath: InteractEvent.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -1760,7 +1764,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6672076436717430936, guid: 4aeb84ea62b2f5147ab7f9ce9f1e4106, type: 3}
       propertyPath: orthographic size
-      value: 1200
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 8105518625516706875, guid: 4aeb84ea62b2f5147ab7f9ce9f1e4106, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1842,6 +1846,52 @@ Transform:
   - {fileID: 2000661762}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!28 &539129642
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 3
+  m_Width: 1
+  m_Height: 1
+  m_CompleteImageSize: 4
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 1
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 4
+  _typelessdata: cdcdcdcd
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &895214173
 PrefabInstance:
   m_ObjectHideFlags: 0
