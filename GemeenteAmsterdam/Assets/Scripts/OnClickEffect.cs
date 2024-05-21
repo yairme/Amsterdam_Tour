@@ -3,39 +3,27 @@ using UnityEngine;
 
 public class OnClickEffect : MonoBehaviour
 {
-    [SerializeField] private ParticleSystem particles;
+    [SerializeField] private GameObject particlesPrefab;
     private Vector2 mousePos;
-    private Coroutine deactivateCoroutine;
-
-    void Start()
-    {
-        particles.Stop();
-    }
 
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            particles.transform.position = new Vector3(mousePos.x, mousePos.y, 0f);
-            particles.Play();
+            Vector3 spawnPosition = new Vector3(mousePos.x, mousePos.y, 0f);
 
-            // Stop any existing coroutine that may deactivate the particles prematurely
-            if (deactivateCoroutine != null)
-            {
-                StopCoroutine(deactivateCoroutine);
-            }
-        }
+            GameObject particlesInstance = Instantiate(particlesPrefab, spawnPosition, Quaternion.identity);
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            deactivateCoroutine = StartCoroutine(DeactivateParticlesWithDelay(2.0f));
+            StartCoroutine(DestroyParticlesAfterDelay(particlesInstance));
         }
     }
 
-    IEnumerator DeactivateParticlesWithDelay(float delay)
+    IEnumerator DestroyParticlesAfterDelay(GameObject particlesInstance)
     {
-        yield return new WaitForSeconds(delay);
-        particles.Stop();
+        ParticleSystem particleSystem = particlesInstance.GetComponent<ParticleSystem>();
+        float duration = particleSystem.main.duration + particleSystem.main.startLifetime.constantMax;
+        yield return new WaitForSeconds(duration);
+        Destroy(particlesInstance);
     }
 }
