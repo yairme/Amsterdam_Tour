@@ -4,7 +4,7 @@ using Mapbox.Unity.Location;
 public class PlayerLocation : MonoBehaviour
 {
     private AbstractLocationProvider _locationProvider = null;
-    private Location currLoc;
+    private Location CurrLoc;
 	private void Start()
 	{
         if (null == _locationProvider)
@@ -15,16 +15,16 @@ public class PlayerLocation : MonoBehaviour
 
     private void Update()
     {
-        currLoc = _locationProvider.CurrentLocation;
+        CurrLoc = _locationProvider.CurrentLocation;
     }
 
     public double GetLatitude()
     {
-        return currLoc.LatitudeLongitude.x;
+        return CurrLoc.LatitudeLongitude.x;
     }
 
     public double GetLongitude()
     {
-        return currLoc.LatitudeLongitude.y;
+        return CurrLoc.LatitudeLongitude.y;
     }
 }

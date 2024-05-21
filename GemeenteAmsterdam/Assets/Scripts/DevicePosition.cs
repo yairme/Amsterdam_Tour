@@ -3,16 +3,16 @@ using UnityEngine;
 public class DevicePosition : MonoBehaviour
 {
 	private bool IsInitialized;
-	private ILocationProvider locationProvider;
+	private ILocationProvider TheLocationProvider;
 	public ILocationProvider LocationProvider
 	{
 		get
 		{
-			if (locationProvider == null)
+			if (TheLocationProvider == null)
 			{
-				locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider;
+				TheLocationProvider = LocationProviderFactory.Instance.DefaultLocationProvider;
 			}
-			return locationProvider;
+			return TheLocationProvider;
 		}
 	}
 	void Start()

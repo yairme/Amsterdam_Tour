@@ -1,8 +1,6 @@
 using UnityEngine.Events;
 using UnityEngine;
-using System;
 using Mapbox.Utils;
-
 
 public class InteractableObject : MonoBehaviour
 {

@@ -67,22 +67,22 @@ public class RotateWithLocationProvider : MonoBehaviour
 			LocationProvider.OnLocationUpdated -= LocationProvider_OnLocationUpdated;
 		}
 	}
-	void LocationProvider_OnLocationUpdated(Location location)
+	void LocationProvider_OnLocationUpdated(Location _location)
 	{
-		float rotationAngle = UseDeviceOrientation ? location.DeviceOrientation : location.UserHeading;
+		float rotationAngle = UseDeviceOrientation ? _location.DeviceOrientation : _location.UserHeading;
 		if (UseNegativeAngle) { rotationAngle *= -1f; }
 		// 'Orientation' changes all the time, pass through immediately
 		if (UseDeviceOrientation)
 		{
 			if (SubtractUserHeading)
 			{
-				if (rotationAngle > location.UserHeading)
+				if (rotationAngle > _location.UserHeading)
 				{
-					rotationAngle = 360 - (rotationAngle - location.UserHeading);
+					rotationAngle = 360 - (rotationAngle - _location.UserHeading);
 				}
 				else
 				{
-					rotationAngle = location.UserHeading - rotationAngle + 360;
+					rotationAngle = _location.UserHeading - rotationAngle + 360;
 				}
 				if (rotationAngle < 0) { rotationAngle += 360; }
 				if (rotationAngle >= 360) { rotationAngle -= 360; }
@@ -92,26 +92,26 @@ public class RotateWithLocationProvider : MonoBehaviour
 		else
 		{
 			// if rotating by 'Heading' only do it if heading has a new value
-			if (location.IsUserHeadingUpdated)
+			if (_location.IsUserHeadingUpdated)
 			{
 				TargetRotation = Quaternion.Euler(getNewEulerAngles(rotationAngle));
 			}
 		}
 	}
-	private Vector3 getNewEulerAngles(float newAngle)
+	private Vector3 getNewEulerAngles(float _newAngle)
 	{
 		var localRotation = transform.localRotation;
 		var currentEuler = localRotation.eulerAngles;
 		var euler = Mapbox.Unity.Constants.Math.Vector3Zero;
 		if (RotateZ)
 		{
-			euler.z = -newAngle;
+			euler.z = -_newAngle;
 			euler.x = currentEuler.x;
 			euler.y = currentEuler.y;
 		}
 		else
 		{
-			euler.y = -newAngle;
+			euler.y = -_newAngle;
 			euler.x = currentEuler.x;
 			euler.z = currentEuler.z;
 		}

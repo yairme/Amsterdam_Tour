@@ -3,28 +3,28 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour
 {
     [Header("Camera Zoom")]
-    [SerializeField] private float zoomOutMin;
-    [SerializeField] private float zoomOutMax;
-    [SerializeField] private float zoomSpeed;
+    [SerializeField] private float ZoomOutMin;
+    [SerializeField] private float ZoomOutMax;
+    [SerializeField] private float ZoomSpeed;
 
     [Header("Map")]
-    [SerializeField] private GameObject mapGameObject;
-    [SerializeField] private Transform startPoint;
+    [SerializeField] private GameObject MapGameObject;
+    [SerializeField] private Transform StartPoint;
 
-    private float leftLimit;
-    private float rightLimit;
-    private float topLimit;
-    private float bottomLimit;
-    private float cameraDistanceLimit = 0; // This will never change, this will stay at 0.
-    private float cameraBottomLimit = -10; // This is how far the camera is from the ground, and won't change.
-    private float startDistance = 300;
+    private float LeftLimit;
+    private float RightLimit;
+    private float TopLimit;
+    private float BottomLimit;
+    private float CameraDistanceLimit = 0; // This will never change, this will stay at 0.
+    private float CameraBottomLimit = -10; // This is how far the camera is from the ground, and won't change.
+    private float StartDistance = 300;
     private Vector3 touchStart;
 
     private void Awake() 
     { 
-        Camera.main.orthographicSize = startDistance; // Set the camera a good distance away from the map.
-        SetCameraCenter(startPoint.position);
-        SpriteBounds(mapGameObject); 
+        Camera.main.orthographicSize = StartDistance; // Set the camera a good distance away from the map.
+        SetCameraCenter(StartPoint.position);
+        SpriteBounds(MapGameObject); 
     }
     void Update()
     {
@@ -48,8 +48,8 @@ public class CameraControl : MonoBehaviour
 
             float difference = currentMagnitude - prevMagnitude;
 
-            Zoom(difference * zoomSpeed);
-            SpriteBounds(mapGameObject); 
+            Zoom(difference * ZoomSpeed);
+            SpriteBounds(MapGameObject); 
         }
         else if (Input.touchCount == 1) 
         {
@@ -62,7 +62,7 @@ public class CameraControl : MonoBehaviour
         }
         CameraBounds();
     }
-    void Zoom(float increment) { Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - increment, zoomOutMin, zoomOutMax); } 
+    void Zoom(float _increment) { Camera.main.orthographicSize = Mathf.Clamp(Camera.main.orthographicSize - _increment, ZoomOutMin, ZoomOutMax); } 
     /// <summary>
     /// Sets the camera bounds based on the sprite's bounds and the camera's extents.
     /// </summary>
@@ -77,10 +77,10 @@ public class CameraControl : MonoBehaviour
         float _horiExtent = _vertExtent * Screen.width / Screen.height;
 
         // Calculate the new limits based on the sprite's bounds and the camera's extents
-        leftLimit = _gameObject.transform.position.x - (_spriteRenderer.bounds.size.x / 2.0f) + _horiExtent;
-        rightLimit = _gameObject.transform.position.x + (_spriteRenderer.bounds.size.x / 2.0f) - _horiExtent;
-        bottomLimit = _gameObject.transform.position.y - (_spriteRenderer.bounds.size.y / 2.0f) + _vertExtent;
-        topLimit = _gameObject.transform.position.y + (_spriteRenderer.bounds.size.y / 2.0f) - _vertExtent;
+        LeftLimit = _gameObject.transform.position.x - (_spriteRenderer.bounds.size.x / 2.0f) + _horiExtent;
+        RightLimit = _gameObject.transform.position.x + (_spriteRenderer.bounds.size.x / 2.0f) - _horiExtent;
+        BottomLimit = _gameObject.transform.position.y - (_spriteRenderer.bounds.size.y / 2.0f) + _vertExtent;
+        TopLimit = _gameObject.transform.position.y + (_spriteRenderer.bounds.size.y / 2.0f) - _vertExtent;
 
     }
     /// <summary>
@@ -89,22 +89,22 @@ public class CameraControl : MonoBehaviour
     private void CameraBounds() 
     { 
         transform.position = new Vector3(
-        Mathf.Clamp(transform.position.x, leftLimit, rightLimit), 
-        Mathf.Clamp(transform.position.y, bottomLimit, topLimit), 
-        Mathf.Clamp(transform.position.z, cameraBottomLimit, cameraDistanceLimit)); 
+        Mathf.Clamp(transform.position.x, LeftLimit, RightLimit), 
+        Mathf.Clamp(transform.position.y, BottomLimit, TopLimit), 
+        Mathf.Clamp(transform.position.z, CameraBottomLimit, CameraDistanceLimit)); 
     }
     /// <summary>
     /// This function is used to set the center of the camera.
     /// </summary>
-    /// <param name="center">The new center position for the camera.</param>
-    private void SetCameraCenter(Vector3 center) { Camera.main.transform.position = new Vector3(center.x, center.y, Camera.main.transform.position.z); }
+    /// <param name="_center">The new center position for the camera.</param>
+    private void SetCameraCenter(Vector3 _center) { Camera.main.transform.position = new Vector3(_center.x, _center.y, Camera.main.transform.position.z); }
     private void OnDrawGizmos() 
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(new Vector2(leftLimit, topLimit), new Vector2(rightLimit, topLimit));
-        Gizmos.DrawLine(new Vector2(rightLimit, topLimit), new Vector2(rightLimit, bottomLimit));
-        Gizmos.DrawLine(new Vector2(rightLimit, bottomLimit), new Vector2(leftLimit, bottomLimit));
-        Gizmos.DrawLine(new Vector2(leftLimit, bottomLimit), new Vector2(leftLimit, topLimit));
+        Gizmos.DrawLine(new Vector2(LeftLimit, TopLimit), new Vector2(RightLimit, TopLimit));
+        Gizmos.DrawLine(new Vector2(RightLimit, TopLimit), new Vector2(RightLimit, BottomLimit));
+        Gizmos.DrawLine(new Vector2(RightLimit, BottomLimit), new Vector2(LeftLimit, BottomLimit));
+        Gizmos.DrawLine(new Vector2(LeftLimit, BottomLimit), new Vector2(LeftLimit, TopLimit));
     }
 }
 

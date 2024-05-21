@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.Events;
 using Mapbox.Utils;
@@ -7,41 +6,40 @@ using Mapbox.Unity.Utilities;
 using System.Collections.Generic;
 public class SpawnWayPoints : MonoBehaviour
 {
-	[SerializeField] AbstractMap _map;
-	[SerializeField]
-	[Geocode]
-	string[] _locationStrings;
-	Vector2d[] _locations;
-	[SerializeField] float _spawnScale = 100f;
-	[SerializeField] GameObject _markerPrefab;
-	List<GameObject> _spawnedObjects;
+	[SerializeField] private AbstractMap Map;
+	[SerializeField] [Geocode] private string[] LocationStrings;
+	[SerializeField] private float SpawnScale = 100f;
+	[SerializeField] private GameObject MarkerPrefab;
     [SerializeField] private UnityEvent[] InteractEvent;
+
+	private Vector2d[] Locations;
+	private List<GameObject> SpawnedObjects;
 
 	void Start()
 	{
-		_locations = new Vector2d[_locationStrings.Length];
-		_spawnedObjects = new List<GameObject>();
-		for (int i = 0; i < _locationStrings.Length; i++)
+		Locations = new Vector2d[LocationStrings.Length];
+		SpawnedObjects = new List<GameObject>();
+		for (int i = 0; i < LocationStrings.Length; i++)
 		{
-			var locationString = _locationStrings[i];
-			_locations[i] = Conversions.StringToLatLon(locationString);
-			var instance = Instantiate(_markerPrefab);
-			instance.GetComponent<InteractableObject>().eventPos = _locations[i];
+			var locationString = LocationStrings[i];
+			Locations[i] = Conversions.StringToLatLon(locationString);
+			var instance = Instantiate(MarkerPrefab);
+			instance.GetComponent<InteractableObject>().eventPos = Locations[i];
             instance.GetComponent<InteractableObject>().InteractEvent = InteractEvent[i];
-			instance.transform.localPosition = _map.GeoToWorldPosition(_locations[i], true);
-			instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
-			_spawnedObjects.Add(instance);
+			instance.transform.localPosition = Map.GeoToWorldPosition(Locations[i], true);
+			instance.transform.localScale = new Vector3(SpawnScale, SpawnScale, SpawnScale);
+			SpawnedObjects.Add(instance);
 		}
 	}
 	private void Update()
 	{
-		int count = _spawnedObjects.Count;
+		int count = SpawnedObjects.Count;
 		for (int i = 0; i < count; i++)
 		{
-			var spawnedObject = _spawnedObjects[i];
-			var location = _locations[i];
-			spawnedObject.transform.localPosition = _map.GeoToWorldPosition(location, true);
-			spawnedObject.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
+			var spawnedObject = SpawnedObjects[i];
+			var location = Locations[i];
+			spawnedObject.transform.localPosition = Map.GeoToWorldPosition(location, true);
+			spawnedObject.transform.localScale = new Vector3(SpawnScale, SpawnScale, SpawnScale);
 		}
 	}
 }
