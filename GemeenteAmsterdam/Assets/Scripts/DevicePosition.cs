@@ -1,29 +1,27 @@
 using Mapbox.Unity.Location;
-using Mapbox.Unity.Map;
 using UnityEngine;
 public class DevicePosition : MonoBehaviour
 {
-	bool _isInitialized;
-	ILocationProvider _locationProvider;
-	ILocationProvider LocationProvider
+	private bool IsInitialized;
+	private ILocationProvider locationProvider;
+	public ILocationProvider LocationProvider
 	{
 		get
 		{
-			if (_locationProvider == null)
+			if (locationProvider == null)
 			{
-				_locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider;
+				locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider;
 			}
-			return _locationProvider;
+			return locationProvider;
 		}
 	}
-	Vector3 _targetPosition;
 	void Start()
 	{
-		LocationProviderFactory.Instance.mapManager.OnInitialized += () => _isInitialized = true;
+		LocationProviderFactory.Instance.mapManager.OnInitialized += () => IsInitialized = true;
 	}
 	void LateUpdate()
 	{
-		if (_isInitialized)
+		if (IsInitialized)
 		{
 			var map = LocationProviderFactory.Instance.mapManager;
 			transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
