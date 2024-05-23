@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0474f07c-2a86-4d41-8ea1-de850ec379a3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GemeenteAmsterdam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GemeenteAmsterdam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MainCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MainCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pre_OnClick Effect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pre_OnClick Effect.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UIScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UIScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/VFXScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/VFXScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnClickEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OnClickEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +88,7 @@
       <workItem from="1716451813526" duration="116000" />
       <workItem from="1716452380630" duration="50000" />
       <workItem from="1716453045568" duration="12000" />
-      <workItem from="1716453302531" duration="303000" />
+      <workItem from="1716453302531" duration="937000" />
     </task>
     <servers />
   </component>
