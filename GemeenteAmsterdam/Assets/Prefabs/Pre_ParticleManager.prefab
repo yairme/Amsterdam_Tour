@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9109928910267626825}
   - component: {fileID: 568238330941574664}
+  - component: {fileID: 7658869340835066736}
   m_Layer: 0
   m_Name: Pre_ParticleManager
   m_TagString: Untagged
@@ -45,3 +46,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particlesPrefab: {fileID: 92566857758010366, guid: 465214d064f517544afdb3cce5130b50, type: 3}
+--- !u!114 &7658869340835066736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5698106468110253296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf09a3de171e5f48aca520db83b4514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
+  uiElements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

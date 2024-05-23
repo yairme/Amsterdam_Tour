@@ -11,7 +11,7 @@ public class OnClickEffect : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 spawnPosition = new Vector3(mousePos.x, mousePos.y, 0f);
+            Vector3 spawnPosition = new Vector3(mousePos.x, mousePos.y, 200f);
 
             GameObject particlesInstance = Instantiate(particlesPrefab, spawnPosition, Quaternion.identity);
 
