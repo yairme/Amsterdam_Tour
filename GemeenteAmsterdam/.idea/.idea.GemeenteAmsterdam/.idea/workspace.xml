@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0474f07c-2a86-4d41-8ea1-de850ec379a3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GemeenteAmsterdam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GemeenteAmsterdam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuizParticleEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuizParticleEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UIScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UIScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OnClickEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OnClickEffect.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +95,7 @@
       <workItem from="1716464932161" duration="1011000" />
       <workItem from="1716468174144" duration="1703000" />
       <workItem from="1716470418913" duration="804000" />
+      <workItem from="1716477438330" duration="3353000" />
     </task>
     <servers />
   </component>
