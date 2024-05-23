@@ -34,26 +34,26 @@ public class RotateWithLocationProvider : MonoBehaviour
 	/// The location provider.
 	/// This is public so you change which concrete <see cref="ILocationProvider"/> to use at runtime.  
 	/// </summary>
-	private ILocationProvider locationProvider;
+	private ILocationProvider DeviceLocationProvider;
 	public ILocationProvider LocationProvider
 	{
 		private get
 		{
-			if (locationProvider == null)
+			if (DeviceLocationProvider == null)
 			{
-				locationProvider = UseTransformLocationProvider ?
+				DeviceLocationProvider = UseTransformLocationProvider ?
 					LocationProviderFactory.Instance.TransformLocationProvider : LocationProviderFactory.Instance.DefaultLocationProvider;
 			}
-			return locationProvider;
+			return DeviceLocationProvider;
 		}
 		set
 		{
-			if (locationProvider != null)
+			if (DeviceLocationProvider != null)
 			{
-				locationProvider.OnLocationUpdated -= LocationProvider_OnLocationUpdated;
+				DeviceLocationProvider.OnLocationUpdated -= LocationProvider_OnLocationUpdated;
 			}
-			locationProvider = value;
-			locationProvider.OnLocationUpdated += LocationProvider_OnLocationUpdated;
+			DeviceLocationProvider = value;
+			DeviceLocationProvider.OnLocationUpdated += LocationProvider_OnLocationUpdated;
 		}
 	}
 	void Start()

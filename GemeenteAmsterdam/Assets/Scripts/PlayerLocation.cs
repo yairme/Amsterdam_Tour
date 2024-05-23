@@ -3,19 +3,19 @@ using Mapbox.Unity.Location;
 
 public class PlayerLocation : MonoBehaviour
 {
-    private AbstractLocationProvider _locationProvider = null;
+    private AbstractLocationProvider LocationProvider = null;
     private Location CurrLoc;
 	private void Start()
 	{
-        if (null == _locationProvider)
+        if (null == LocationProvider)
 		{
-			_locationProvider = LocationProviderFactory.Instance.DefaultLocationProvider as AbstractLocationProvider;
+			LocationProvider = LocationProviderFactory.Instance.DefaultLocationProvider as AbstractLocationProvider;
 		}
 	}
 
     private void Update()
     {
-        CurrLoc = _locationProvider.CurrentLocation;
+        CurrLoc = LocationProvider.CurrentLocation;
     }
 
     public double GetLatitude()
