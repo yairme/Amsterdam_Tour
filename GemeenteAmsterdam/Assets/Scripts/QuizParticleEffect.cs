@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class QuizParticleEffect : MonoBehaviour
 {
-    public ParticleSystem particleEffect; // Reference to the Particle System
-    public List<GameObject> uiElements; // List of UI elements to check
+    public ParticleSystem particleEffect;
+    public List<GameObject> uiElements;
 
     void Update()
     {
