@@ -1,0 +1,10 @@
+Stand Down 5
+
+25-3-2024
+
+George heeft vandaag de Trello en GitHub geupdate + de Sprintplanning documenteren.
+Stefan heeft technisch onderzoek gedaan
+Solane heeft inpsiratie gezocht voor de styleguide en een paar schetsen gemaakt
+Leandra heeft aan de thumbnail en styleguide gewerkt
+Indy Was bezig met NL examen en heeft een thumbnail gemaakt voor het eerste objective in onze game
+Yair heeft voorbeelden toegevoegd aan de code convention

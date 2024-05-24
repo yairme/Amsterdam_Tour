@@ -1,0 +1,11 @@
+Stand Down 15
+
+15-4-2024
+
+-George heeft vandaag grotendeels de UI opgezet en aan het script gaan werken voor de UI overgang
+-Stefan heeft android en ios van elkaar kunnen scheiden in een app
+-Solane heeft aan de huizen gewerkt voor de achtergrond
+-Leandra heeft gewerkt aan foto's voor de quiz
+-Indy is verder aan het UI concept gegaan
+-Yair heeft doorgewerkt aan de interactable objects 
+

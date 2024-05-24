@@ -1,0 +1,34 @@
+Dit is de Sprint Refinement over Sprint 2. Hier hebben wij onze eigen feedback op gegeven rond het halverwege punt van de sprint.
+
+Geplanned (oud):
+- GitHub Wiki AF!
+- UI Script
+- Navigatie systeem
+- Interactable objects systeem
+- Camera systeem
+- UI Art
+- Mock ups
+
+Geplanned (nieuw):
+- GitHub Wiki AF!
+- UI Script
+- Navigatie systeem
+- Interactable objects systeem
+- Camera systeem
+- UI Art
+- Mock ups
+
+- Vragen voor de quiz
+- Styleguide
+
+Beschrijving:
+Er is weinig verandert in de dingen die zijn toegevoegd aan onze waslijst. Stefan en Yair zijn beide tegen problemen aan gelopen
+met hun scripts en moeten dus meer tijd nemen dan ze hadden gewilt om het op te lossen. George maakt kleine stappen door eerst
+zijn script op te splitsen in kleine scripts en later samen te voegen (om het simpel te houden).
+
+De artists hebben nog wat taakjes om te doen maar grotendeels loopt alles goed naast de dev problemen.
+
+Update:
+Om alvast vooruit te werken zijn Leandra (en Indy) een beetje gaan brainstormen over wat voor vragen er gesteld gaan worden en
+daarbij dus extra informatie gaan zoeken online. De styleguide was ook nog niet helemaal af en in de GitHub Wiki dus daar wordt ook
+aan gewerkt

@@ -1,0 +1,15 @@
+Stand Down 28
+
+17-5-2024
+
+George heeft het OnClick effect afgemaakt (het heeft nu alleen nog een texture nodig)
+Stefan
+Solane
+Leandra
+Indy
+Yair heeft vandaag gewerkt aan de interactable objects (Je kan nu dingen in inspector toewijzen)
+
+*Stefan is weg gegaan
+*Solane is ziek naar huis gegaan
+*Leandra is ziek
+*Indy is ziek

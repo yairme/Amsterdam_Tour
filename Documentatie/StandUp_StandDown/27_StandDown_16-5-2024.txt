@@ -1,0 +1,10 @@
+Stand Up 27
+
+16-5-2024
+
+George heeft vandaag zijn UI werk in een pull request gestopt en doorgestuurd en is vervolgens verder gegaan met VFX werk + nog de Wiki ge-grammar checked (OnClick effect)
+Stefan heeft zijn code geoptimaliseerd en geimplementeerd
+Solane is verder aan de assets gewerkt
+Leandra heeft de art voor de quiz afgemaakt
+Indy is verder gegaan aan de quiz vragen
+Yair heeft een systeem voor coordinaten gemaakt voor onze map

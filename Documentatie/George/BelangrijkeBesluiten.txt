@@ -1,0 +1,39 @@
+19-3-2024: 
+Wij besloten om op 22-3-2024 naar Amsterdam toe te gaan en door onze route te lopen
+die wij gaan nemen voor onze opdracht. Hoe vroeger hoe beter!
+
+25-3-2024:
+Wij besloten om het Trello bord op een andere manier in te delen. Origineel hadden wij een
+ander gekleurde omslag voor Userstories en de To-Do's die erbij hoorde om duidelijk te maken
+welke bij welke hoorde. Sinds we al gebruik maken van de getallen voor onze userstories besloten wij gewoon om de:
+User stories, To Do, Doing, Ready for Review, Done lijsten aparte kleuren te geven. Dat brengt
+wat rust in de Trello.
+
+29-3-2024:
+Op vrijdag hadden wij onze presentatie moeten geven naar ons bedrijf toe over het project maar door een miscommunicatie van het
+bedrijf zijn ze niet komen opdagen. Vervolgens hebben wij besloten Sprint 1 te extenden tot volgende vrijdag waar wij een nieuw
+gesprek zullen voeren met het bedrijf.
+
+4-4-2024
+Op donderdag hebben wij het definitieve besluit gemaakt om woensdag een vrije dag te maken om af te koelen. Indy bijv. heeft een
+goeie reden ervoor in verband met dat hij werk heeft op die dag. Als wij tijds tekort krijgen zullen we op woensdag weer gaan
+werken
+
+12-4-2024
+Op vrijdag hebben wij tijdens de sprint retrospective een belangrijke afspraak gemaakt dat iedereen de mogelijkheid heeft om
+op de dag te besluiten apart te willen werken van de rest voor stilte.
+
+18-4-2024
+Op donderdag is er besloten dat de notulist niet de stand up van laat-komers zal documenteren. Ze zullen natuurlijk wel de
+stand down documenteren als ze daarvoor aanwezig zijn. Dit is beide voor dat we laat nog de stand up page moeten aanpassen
+en (hopelijk) ervoor te zorgen dat iedereen een beetje bij tijds aanwezig is
+
+6-5-2024
+(Dit was al een paar dagen eerder besloten maar niet concreet)
+Op maandag was er besloten onder de devs dat Stefan en Yair George zullen meehelpen met de UI. Dit komt omdat een groot gedeelte
+van hun scripts van de UI afhangt en 90% van de game is ook inderdaad gebaseerd op UI. Dit maakt George's workload lichter en zorgt ervoor
+dat iedereen verder kan werken.
+
+13-5-2024
+Op maandag heeft George een kort gesprekje gehad met Yair over de Scrum Master positie. Hiervoor was Yair de Scrum Master maar
+veel van de taken zijn door George gedaan. Gezamelijk is er besloten dat George nu de rol heeft

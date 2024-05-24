@@ -1,0 +1,31 @@
+Sprint 1
+
+19-3-2024 / 29-3-2024
+
+Geplanned:
+- Pipeline setup (zo ver mogelijk tot iedereen een beetje aan de slag kan)
+- Github/Trello setup
+- Styleboard en Thumbnails
+- Afspraken maken onder elkaar
+- Geplande route door Amsterdam heen voor de opdracht (22-3-2024)
+- Rolverdeling
+- Technisch ontwerp
+- Code conventie
+- Naming conventie
+
+Beschrijving:
+Tijdens de eerste sprint zal iedereen 'alle hands on deck' werken aan de early documentatie
+onderdelen van het product zodat wij zo'n duidelijk mogelijk beeld hebben van de sprints
+hierna. Pipeline is hierbij de belangrijkste voor de devs (George zal die volledig vullen).
+De artists gaan aan de Styleboard en Thumbnails werken grotendeels om hun early documentatie
+af te maken. Beide kanten delen hun vooruitgang met elkaar om een beetje een beeld te krijgen
+van hoe het werk ervoor staat en of iedereen het er mee eens is.
+
+(Dit gebeurt vooral tijdens dat iedereen aan de slag is of aan de stand down)
+
+Vervolgens hebben wij ook op 22-3-2024 een dag geplanned waar wij de route zullen lopen die
+wij gaan overnemene voor onze opdracht. Iedereen zal mee lopen en gezamelijk bespreken over
+hoe en wat wij willen meenemen van onze trip.
+
+*Onze groep heeft nogal moeite met communicatie dus wij nemen de tijd om afspraken
+en doucmentatie te doen gezamelijk aan de ruime kant.

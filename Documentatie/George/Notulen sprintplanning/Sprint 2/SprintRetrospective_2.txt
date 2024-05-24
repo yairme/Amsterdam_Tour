@@ -1,0 +1,53 @@
+26-4-2024
+
+Feedback Gemeente Amsterdam:
+- Wil graag dat het op de IOS komt
+- volgende keer even aangeven in welke buurt wij werken
+- Een tip (een request) gekregen (Wasbeer hond gespot in de buurt van de begraafplaats) om dit in de game te stoppen
+- Probeer mensen aan te sporen om (bijvoorbeeld) de kerken te bezoeken
+
+Eigen feedback:
+- Mock up aan het begin van de presentatie zetten volgende keer
+
+
+* Tijdens deze sprint was het duidelijk geworden hoe groot het aantal UI werk zou zijn voor deze game. George heeft veel
+tijd besteed aan onderdelen van de UI te werken die uiteindelijk voor Stefan en Yair waren omdat het onder UI valt. Na kort
+bespreken is dit duidelijk gemaakt en zijn de taken beter opgedeeld onder de devs.
+(Dit is ook de reden waarom dit niet wordt neergezet in Technisch Ontwerp)
+
+Wat ging goed?
+--------------------------------
+- Online communicatie is versterkt
+- Art heeft grote vooruitgang gemaakt
+- Er was een goeie samenwerking tussen Yair en George om vooruitgang te kweken op de UI.
+- 
+
+Wat ging minder goed?
+--------------------------------
+- Tello is niet goed bijgehouden door beide de scrum master en de gebruikers
+- Prioriteiten staan niet op de juiste volgorde
+- Veel mensen werkten erg apart van elkaar
+- Slechte GitFlow
+
+Ideëen?
+--------------------------------
+- Prioriteiten nakijken en anders stellen
+- GitHub AF
+- Recentere informatie zoeken over onze route
+- Regels review
+
+Wat willen we behouden
+-------------------------------
+- Online communicatie behouden
+
+
+Extra Belangrijk Sprint 1 (Is het goed bijgehouden?):
+- Vooruitgang Development
+*Dit is niet goed aangehouden en nemen we mee door de komende sprints
+- De communicatie in absentie gebied verbeteren
+*Dit is wel goed aangehouden, zolang het zo blijft hoeven wij dit niet weer aan te kaarten
+
+Extra Belangrijk:
+- Prioriteiten nakijken en anders stellen
+- Tello is niet goed bijgehouden door beide de scrum master en de gebruikers (Dit moet anders)
+- Vooruitgang Development (Van Sprint 1 meegenomen)
