@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bc9501cf5c4c74e941675c973d5902, type: 3}
+  m_Name: WasbeerVerwarring
+  m_EditorClassIdentifier: 
+  Question: Met welk dier werd de wasbeerhond op eerste oogopslag verward
+  Info: 'Toen de wasbeer hond als eerste aangetroffen werd dacht een oplettende voorbijganger
+    dat het een Boommarter was en melde dit aan een ecoloog. De wasbeerhond was dood
+    aangetroffen hoe het hier kwam of hoe het gestorven is is nog onduidelijk. '
+  Hint: 
+  Points: 100
+  Options:
+  - ButText: Boommarter
+    check: 1
+  - ButText: Wasbeer
+    check: 0
+  - ButText: Kat
+    check: 0

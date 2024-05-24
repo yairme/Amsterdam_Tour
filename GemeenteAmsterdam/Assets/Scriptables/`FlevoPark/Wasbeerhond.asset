@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bc9501cf5c4c74e941675c973d5902, type: 3}
+  m_Name: Wasbeerhond
+  m_EditorClassIdentifier: 
+  Question: 'Welke invasieve soort is als laatst gevonden in het Flevopark? '
+  Info: "Oorspronkelijk komen wasbeerhonden uit Oost-Azi\xEB. Later werden de dieren
+    in Rusland gehouden voor hun vacht en de jacht. Sommige verwilderde exemplaren
+    trokken verder naar Europa. De schuwe dieren mijden mensen en honden, zijn zeldzaam
+    en worden zelden in het wild gezien. Ze hebben slecht zicht en zijn vooral \u2019s
+    nachts actief."
+  Hint: Lees het bord bij de ingang van de begraafplaats
+  Points: 100
+  Options:
+  - ButText: De Boommarter
+    check: 0
+  - ButText: De Japanse Otter
+    check: 0
+  - ButText: De Wasbeerhond
+    check: 1

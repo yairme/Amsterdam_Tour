@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bc9501cf5c4c74e941675c973d5902, type: 3}
+  m_Name: monumment
+  m_EditorClassIdentifier: 
+  Question: 'Welke monumenten heeft dit plein? '
+  Info: "Er zijn geen monumenten voor wat betreft gebouwen, maar op het plein staan
+    maar liefst viif monumentale bomen. Het zijn drie Italiaanse populieren (Populus
+    nigra Italica) en een Monumentaaliep (Ulmus minor Sarniensis) op het westelijke
+    deel. Alhoewel geclassificeerd als monumentaal zijn ze nog relatief jong, respectievelijk
+    uit 1965 en 1960. Ze hebben volgens de gemeente \u201Cbeeldbepalende waarde\u201D.  "
+  Hint: 
+  Points: 100
+  Options:
+  - ButText: de klokken toren
+    check: 0
+  - ButText: de bankjes
+    check: 0
+  - ButText: 'de bomen '
+    check: 1
