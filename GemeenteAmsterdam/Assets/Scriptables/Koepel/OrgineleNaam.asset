@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bc9501cf5c4c74e941675c973d5902, type: 3}
+  m_Name: OrgineleNaam
+  m_EditorClassIdentifier: 
+  Question: Wat is de oorspronkelijke  naam van dit gebouw?
+  Info: "Zoals bij veel van zijn kerken is het ontwerp van de Gerardus Majellakerk
+    ge\xEFnspireerd door de Byzantijnse kerken die Stuyt tijdens een bedevaart naar
+    Palestina in 1903 bezocht  Sinds 2012 hebben het Nederlands Philharmonisch Orkest
+    en het Nederlands Kamerorkest er hun thuisplek gevonden. De centrale ruimte is
+    een concertzaal geworden en het gebouw heeft de naam NedPho-Koepel gekregen. "
+  Hint: 
+  Points: 100
+  Options:
+  - ButText: Onze Lieve Vrouwetoren
+    check: 0
+  - ButText: Sint Vitus-kerk
+    check: 0
+  - ButText: Gerardus Majellakerk
+    check: 1
