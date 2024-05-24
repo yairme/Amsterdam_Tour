@@ -1,0 +1,34 @@
+Sprint 2
+
+15-4-2024 / 3-5-2024
+
+Geplanned:
+- GitHub Wiki AF!
+- UI Script
+- Navigatie systeem
+- Interactable objects systeem
+- Camera systeem
+- UI Art
+- Mock ups
+
+
+Beschrijving:
+De planning voor de tweede sprint kan heel klein en krachtig gehouden worden. De game in zijn geheel heeft niet veel scripts nodig
+om te functioneren dus de prioriteiten die boven zijn geschreven (UI/Navigatie/Interactable objects/Map scroll) is al het grootste
+gedeelte van het project zelf. George gaat aan de slag met de UI (hij heeft vermeld dat dit langer zou kunnen duren vanwege skill niveau)
+en hoopt er zo veel mogelijk vooruitgang mee te maken om de data van andere scripts te kunnen gebruiken. Vervolgens gaat Stefan aan de slag 
+met het Navigatie systeem grotendeels, met het doel om het af te kunnen krijgen voor de volgende sprint. Als laatste zal Yair de taken van
+het camera systeem en de interactable objects vast pakken, met het camera systeem op een hogere prioriteit om af te krijgen en vervolgens
+interactable object script.
+
+De artists zullen door werken met waar ze verder mee gingen in de eerste sprint, notable onderdelen daarvan zijn:
+- Achtergrond elementen (bomen/huizen/etc.)
+- UI knoppen
+- Quiz decoratie
+
+Grotendeels lopen de artists gewoon op schema en verwachten dit aan te houden op hun eigen tempo.
+
+De devs lopen achter tegenover de artists en het schema voor de game dus die zullen wat harder moeten werken.
+
+*Regels worden misschien aangepast/strakker gemaakt om er voor te zorgen dat wij dit nieuwe tempo kunnen vast pakken ZONDER de vrijheid die
+iedereen in hun werksfeer wilt af te nemen

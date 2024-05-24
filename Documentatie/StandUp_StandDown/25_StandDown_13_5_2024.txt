@@ -1,0 +1,11 @@
+Stand Up 25
+
+13-5-2024
+
+
+George heeft vandaag met Yair aan het UI swap systeem gewerkt
+Stefan heeft aan het vragen systeem gewerkt (heeft alleen nog de vragen nodig)
+Solane is verder gegaan aan assets van de map 
+Leandra heeft aan de quiz foto's gewerkt en de files aangepast voor de naming convention
+Indy heeft aan de quiz vragen gewerkt
+Yair heeft vandaag de interactable game object script gepushed naar de main branch en met George gewerkt aan het UI swap systeem

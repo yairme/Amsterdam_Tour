@@ -1,0 +1,10 @@
+Stand Down 26
+
+14-5-2024
+
+George heeft vandaag zijn onderdeel van de UI afgemaakt (hoeft het alleen nog te pull-requesten)
+Stefan 
+Solane is verder gegaan aan de assets en details voor de map
+Leandra heeft verder aan de quiz plaatjes gewerkt, nagekeken wat we missen en de gebouwen afgemaakt
+Indy heeft vandaag aan de quiz vragen gewerkt
+Yair heeft vandaag de documentatie van de interactable objecten afgemaakt, kort met George gewerkt aan UI en geholpen met het kompas systeem van Stefan

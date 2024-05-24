@@ -1,0 +1,13 @@
+Stand Up 25
+
+13-5-2024
+
+George gaat aan het UI swap script werken.
+Stefan gaat het vragen systeem implementeren
+Solane gaat verder aan map details + icoontjes
+Leandra gaat verder aan de quiz vragen werken en gaat werken aan de mock up
+Indy gaat vector art overzetten en aan de documentatie werken (+ samen met Leandra aan de quiz vragen werken)
+Yair gaat een manier zoeken om de game op IOS te krijgen en vervolgens gaat hij verder aan het interactable object script
+
+*Solane heeft een Nederland examen om 9 uur en is iets later
+*Yair werkt thuis

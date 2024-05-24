@@ -1,0 +1,42 @@
+Dit is de Sprint Refinement over Sprint 1. Hier hebben wij onze eigen feedback op gegeven rond het halverwege punt van de sprint.
+
+De originele onderdelen in Sprint planning 1 wordt nog steeds aan gewerkt of zijn al af. Dus ik herhaal ze nu en toon wat er is toegevoegd met een descriptie
+
+Geplanned (oud):
+- Pipeline setup (zo ver mogelijk tot iedereen een beetje aan de slag kan)
+- Github/Trello setup
+- Styleboard en Thumbnails
+- Afspraken maken onder elkaar
+- Geplande route door Amsterdam heen voor de opdracht (22-3-2024)
+- Rolverdeling
+- Technisch ontwerp
+- Code conventie
+- Naming conventie
+
+Geplanned (nieuw):
+- Pipeline setup (zo ver mogelijk tot iedereen een beetje aan de slag kan)
+- Github/Trello setup
+- Styleboard en Thumbnails
+- Afspraken maken onder elkaar
+- Geplande route door Amsterdam heen voor de opdracht (22-3-2024)
+- Rolverdeling
+- Technisch ontwerp
+- Code conventie
+- Naming conventie
+
+- Start aan de UI
+- Start aan het camera systeem
+- Start aan informatie zoeken over de mogelijkheden voor Android en IOS
+
+
+Bescrhijving:
+Grotendeels is het "Documentatie eerst" plan nog steeds van kracht, maar gezien dat wij al genoeg vooruitgang hebben gemaakt
+met de documentatie kunnen wij nu veilig beginnen met het project opzetten. De UI wordt gedaan door Indy en ontvangen/toegepast
+door George in de Unity Scene. Daarnaast moeten we starten aan onze "basis movement" wat komt in de vorm van "Camera Movement",
+hier zal Yair aan werken. Als laatste toegevoegd maken we ons zorgen over de compatibilities van Android en IOS dus beide Yair
+en Stefan gaan research doen of wat wij willen voor de game überhaubt mogelijk is voor de game.
+
+Update:
+Onze sprint review van 29-3-2024 ging niet door vanwege een miscommunicatie door de gemeente Amsterdam. Vervolgens hebben wij de sprint
+verlengt met een week en de volgende sprint review geplanned op 12-4-2024. Iedereen was het eens met dit besluit omdat het erg
+lastig is om een sprint te eindigen zonder een review/presentatie met het bedrijf voor feedback.

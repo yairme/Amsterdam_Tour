@@ -1,0 +1,51 @@
+Dit is de Sprint Refinement over Sprint 3. Hier hebben wij onze eigen feedback op gegeven rond het halverwege punt van de sprint.
+
+
+
+
+Geplanned (oud):
+- Project zo af als mogelijk
+- UI (Linked to other scripts)
+- Interactable Objects (Linked to other scripts)
+- Navigatie (AF)
+- Score script
+- Vragen script
+- Art moet geimplementeerd worden
+- Styleguide (GitHub Wiki)
+- File Overdracht (GitHub Wiki)
+- Code Conventie (GitHub Wiki)
+- GitFlow (GitHub Wiki)
+- Mock ups af
+
+Geplanned (nieuw):
+- Project zo af als mogelijk
+- Totale code implementatie (UI/Interactable Objects/Navigatie)
+- Score script
+- Vragen script
+- Art moet geimplementeerd worden
+- File Overdracht (GitHub Wiki)
+- Code Conventie (GitHub Wiki)
+- GitFlow (GitHub Wiki)
+- Mock ups (puntjes op de I)
+- Usertest
+- Presentaie
+- VFX af
+
+Grotendeels is ons doel nog steeds hetzelfde gebleven (met Project zo af als mogelijk). De UI, interactable objects en navigatie
+systeems zijn allemaal klaar maar moeten wel nog geimplementeerd worden op de main branch, dit ligt in Stefan's handen. Vervolgens
+moeten de vragen voor het vragen systeem nog ingevuld worden en het score systeem toegevoegd worden. Kort gezegd: "Laatse puntjes op de I"
+
+Vervolgens gaat Yair aan de slag met de artists om hun te leren hoe ze met GitHub om moeten gaan zodat ze zelf hun art kunnen
+inleveren. Dit zorgt er ook voor dat daarna de File Overdracht binnen de GitHub Wiki kan afgemaakt worden. De mock ups zijn
+grotendeels af maar moeten nog een laatste check-up krijgen van de artists en George heeft beloofd dat hij nog zijn VFX af zou
+maken, Hier zal hij alleen op dinsdag aan werken zodat hij de rest van zijn tijd kan besteden aan de andere onderdelen op de lijst. 
+Hier ook: "Laatste puntjes op de I".
+
+Als laatste (en waarschijnlijk ook in de latere helft van de week) wordt er aan de Presentatie gewerkt en een paar dingen binnen
+de GitHub Wiki aangepast waar wij het nog niet helemaal over eens waren (Code Conventie/GitFlow). Daarvoor moet er wel nog een
+Usertest uitgevoerd worden maar we plakken dit rond het midden van de week zodat wij zo veel mogelijk tijd hebben om het project
+"heel" te krijgen voordat wij een user de game laten testen.
+
+Deze week gaat krap worden maar grotendeels de onderdelen die overgebleven zijn op de lijst zijn "Laatste puntjes op de I" en
+dus verwachten wij dat ze niet langer zullen duren dan dat wij ze inrekenen. Er zijn mogelijkheden op 'last minute issues' maar
+wij gaan proberen zo snel mogelijk deze aan te pakken of een oplossing er om heen te bedenken.

@@ -1,0 +1,15 @@
+Stand Up 11
+
+8-4-2024
+
+George gaat een begin maken aan de UI
+Stefan is ziek
+Solane gaat met de andere artist aan art documentatie en Github werken
+Leandra gaat met de andere artist aan de art documentatie en GitHub werken
+Indy gaat met de andere artist aan art documentatie en GitHub werken
+Yair gaat de artists helpen met de GitHub en gaat verder met programmeren
+
+*Stefan is ziek
+
+(Vandaag gaat Yair de Artists leren over hoe ze GitHub kunnen gebruiken zodat zij de files kunnen opsturen naar Unity)
+(Sinds Stefan ziek is kan de Documentatie binnen GitHub niet volledig afgemaakt worden dus we gaan vooruit werken aan de volgende sprint)

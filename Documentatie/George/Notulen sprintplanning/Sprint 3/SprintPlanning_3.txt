@@ -1,0 +1,28 @@
+Sprint 3
+
+6-5-2024 / 24-5-2024
+
+Geplanned:
+- Project zo af als mogelijk
+- UI (Linked to other scripts)
+- Interactable Objects (Linked to other scripts)
+- Navigatie (AF)
+- Score script
+- Vragen script
+- Art moet geimplementeerd worden
+- Styleguide (GitHub Wiki)
+- File Overdracht (GitHub Wiki)
+- Code Conventie (GitHub Wiki)
+- GitFlow (GitHub Wiki)
+- Mock ups af
+
+Beschrijving:
+Dit is de laatste sprint voor het project en wij hebben veel te doen om dit een "afgemaakt project" te noemen. De artists
+lopen goed op schema naast een paar kleine onderdelen die nog af moeten (en uiteindelijk het implementeren van de art).
+Voor de devs is het belangrijk dat er scripts aan elkaar gekoppeld worden en voor de scripts die niet gekoppeld worden
+gewoon af zijn. George gaat proberen voor de start van volgende week de UI af te maken zodat het kan werken met de
+interactable objects systeem van Yair en opgeslagen waardes van Stefan's scripts.
+
+Vervolgens is het ook belangrijk dat de GitHub Wiki compleet af is en dat we nog even terug kijken op wat onze opdracht gevers
+van ons verwachten qua onderdelen die wij voor hun zouden maken. We moeten sowieso nog een goeie recording maken van
+een usertest wat wij in deze laatste twee weken veel kans voor zullen krijgen sinds ons project nu klaar moet zijn.

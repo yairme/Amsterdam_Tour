@@ -1,0 +1,50 @@
+24-5-2024
+
+Feedback Gemeente Amsterdam:
+- Zou graag een game willen zien
+
+Docent Feedback:
+- Zou graag een game willen zien en staat open om meer tijd aan te bieden voor de groep
+- Liet duidelijk merken dat communicatie met de klant niet sterk was en beter zou moeten zijn
+
+Eigen Feedback:
+- Voor dit laatste stuk moeten we flink onze communicatie (beide onder elkaar en de klant) verbeteren
+- Het belangrijskte is om de game nu samen te trekken
+
+* Er was veel afwezigheid voor sommige. Veel met goeie reden maar ook een paar die niet goed verklaart zijn
+
+* Er was een flink te kort aan motivatie voor sommige.
+
+* Het samen trekken van de game in de main branch was niet goed gehandeld
+
+
+Wat ging er goed?
+--------------------------------
+- Iedereen heeft hun plekjes kunnen vinden om rustig maar snel door te kunnen werken
+- Gemiddeld hebben wij meer dan verwachting geleverd als we terug kijken op de vorige sprint.
+
+Wat ging minder goed?
+--------------------------------
+- Op de kosten van een goed werk tempo is er een flink communicatie tekort gekomen voor het team en de klant. Dit veroorzaakte veel verwarring
+- Vanwege dat er veel op onze borden lagen zijn bepaalde kleine taken onder de radar gevallen
+
+Ideëen?
+--------------------------------
+- Als de mogelijkheid wordt aangeboden zouden we graag nog willen proberen de game af te maken
+
+Wat willen wij behouden?
+--------------------------------
+- De rust en mogelijkheid om de rust te kunnen opzoeken 
+
+
+Extra belangrijk Sprint 2 (Is het goed bijgehouden)
+- Prioriteiten nakijken en anders stellen
+* Dit is goed gehandeld en hebben we mooi aangehouden door de sprint heen
+- Trello is niet goed bijgehouden door beide de scrum master en de gebruikers (Dit moet anders)
+* De Trello is redelijk goed aangehouden maar zou beter kunne. Hoe dan ook het is verbeterd (er is ook een wissel in Scrum Masters gebeurt in die tijd)
+- Vooruitgang Development (Van Sprint 1 meegenomen)
+*Dit is goed verbeterd. De meeste hebben al hun werk af kunnen krijgen
+
+Extra Belangrijk:
+- Als de mogelijkheid wordt aangeboden zouden we graag nog willen proberen de game af te maken
+- Op de kosten van een goed werk tempo is er een flink communicatie tekort gekomen voor het team en de klant. Dit veroorzaakte veel verwarring

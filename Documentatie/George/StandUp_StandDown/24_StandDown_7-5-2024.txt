@@ -1,0 +1,10 @@
+Stand Down 24
+
+7-5-2024
+
+George is vandaag een beetje verder gegaan met de UI text en heeft (grotendeels) alle UI art geimplementeerd
+Stefan heeft upgrades op het vragen systeem gezet en werkt op de UI (hoeft alleen nog geimplementeerd te worden)
+Solane heeft vandaag icoontjes voor de game gemaakt en is verder gegaan met de punten tekenen voor de map
+Leandra is verder gegaan aan foto's van de quiz en heeft onderzoek gedaan voor de quiz
+Indy heeft vandaag alle onderdelen voor de map in Vector Art gekregen en onderzoek gedaan aan de NEDPHO
+Yair is klaar met de interactable objects en is door gegaan met de IOS research
