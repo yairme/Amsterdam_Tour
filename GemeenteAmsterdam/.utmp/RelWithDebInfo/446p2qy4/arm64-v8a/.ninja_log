@@ -1,0 +1,11 @@
+# ninja log v5
+26	2384	7348772506674333	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	5da893272d8cc40e
+7	2525	7348772507152784	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	be0ab4e154ef672c
+55	2538	7348772507446373	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	c411c37f4025108d
+12	2653	7348772509039712	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	4f3fe4d690d9700d
+17	2798	7348772511702567	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	3512733bca4b1312
+2528	2893	7348772512527897	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	afc427c259f9fe19
+1	2899	7348772512955639	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	826568e963f87779
+2894	3385	7348772515687462	D:/Amsterdam_Tour/GemeenteAmsterdam/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/446p2qy4/obj/arm64-v8a/libswappywrapper.so	a85b5e60a44a2a6d
+2387	3549	7348772519480880	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	3434c34fadac8de1
+3549	3781	7348772521145520	D:/Amsterdam_Tour/GemeenteAmsterdam/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/446p2qy4/obj/arm64-v8a/libgame.so	7d1ba3e3202d323d
