@@ -9,6 +9,7 @@ public class SpawnWayPoints : MonoBehaviour
 	[SerializeField] private AbstractMap Map;
 	[SerializeField] [Geocode] private string[] LocationStrings;
 	[SerializeField] private float SpawnScale = 100f;
+	[SerializeField] private Sprite[] sprite;
 	[SerializeField] private GameObject MarkerPrefab;
     [SerializeField] private UnityEvent[] InteractEvent;
 
@@ -26,6 +27,7 @@ public class SpawnWayPoints : MonoBehaviour
 			var instance = Instantiate(MarkerPrefab);
 			instance.GetComponent<InteractableObject>().eventPos = Locations[i];
             instance.GetComponent<InteractableObject>().InteractEvent = InteractEvent[i];
+			instance.GetComponent<InteractableObject>().Child.GetComponent<SpriteRenderer>().sprite = sprite[i];
 			instance.transform.localPosition = Map.GeoToWorldPosition(Locations[i], true);
 			instance.transform.localScale = new Vector3(SpawnScale, SpawnScale, SpawnScale);
 			SpawnedObjects.Add(instance);

@@ -5,7 +5,7 @@ using Mapbox.Utils;
 public class InteractableObject : MonoBehaviour
 {
     [SerializeField] private double Range;
-    [SerializeField] private GameObject Child;
+    public GameObject Child;
     public UnityEvent InteractEvent;
     private bool IsItActive = true;
     private PlayerLocation PlayerLocation;
