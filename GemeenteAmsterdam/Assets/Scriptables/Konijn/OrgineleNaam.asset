@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bc9501cf5c4c74e941675c973d5902, type: 3}
+  m_Name: OrgineleNaam
+  m_EditorClassIdentifier: 
+  Question: Wat is de originele naam van dit kunstwerk?
+  Info: Angstig konijn heeft in Anxiety een voorganger. Dat urethaanschuimen beeldje
+    uit 2016 is echter slechts 56 bij 60 bij 56 centimeter groot, is hardroze in
+    plaats van zwart, en heeft opstaande konijnenoren.
+  Hint: 
+  Points: 100
+  Options:
+  - ButText: angry rabbit
+    check: 0
+  - ButText: anxiety rabbit
+    check: 1
+  - ButText: sad rabbit
+    check: 0

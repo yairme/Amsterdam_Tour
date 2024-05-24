@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bc9501cf5c4c74e941675c973d5902, type: 3}
+  m_Name: Doeleinde
+  m_EditorClassIdentifier: 
+  Question: Waarvoor wordt dit gebouw gebruikt? U kunt naar binnen gaan voor extra
+    informatie
+  Info: Buurthuis Archipel is een stichting met als doel een activerend en buurtgericht
+    programma te realiseren voor de Makassarpleinbuurt
+  Hint: 
+  Points: 100
+  Options:
+  - ButText: 'religieuze plek '
+    check: 0
+  - ButText: Buurthuis
+    check: 1
+  - ButText: 'studieruimte voor studenten '
+    check: 0

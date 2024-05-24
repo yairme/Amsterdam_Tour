@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bc9501cf5c4c74e941675c973d5902, type: 3}
+  m_Name: Bereiken
+  m_EditorClassIdentifier: 
+  Question: Wat wil de gemeente bereiken met de verbouwing van het plein.
+  Info: Het nieuwe Sumatraplantsoen heeft veel groen. Bewoners kunnen wandelen of
+    uitrusten op de groene strook van bloemperken en moestuinen. Of elkaar ontmoeten
+    bij het nieuwe buurtgebouwtje. Op het kleurrijke plantsoen komen speelplekken,
+    een waterspeeltoestel, een jeu-de-boulesbaan, banken, een schaaktafel en picknicktafels.
+    Het vernieuwde plantsoen wordt een perfecte plek voor kleine evenementen voor
+    de buurt.
+  Hint: 
+  Points: 100
+  Options:
+  - ButText: Vernieuwen van het oude plein dat begon te vervallen
+    check: 0
+  - ButText: "Een rustigere en kindvriendelijke omgeving cre\xEBren "
+    check: 0
+  - ButText: Bijde antwoorden A en B
+    check: 1

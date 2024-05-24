@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 818762f33f41bac45a2ce9d80e404f27, type: 3}
+  m_Name: Grafstenen
+  m_EditorClassIdentifier: 
+  Question: 'Hoeveel grafstenen gokt u dat er nog ongeveer over zijn op deze begraafplaats '
+  Info: Na de Tweede Wereldoorlog werd een groot deel van de begraafplaats geruimd,
+    wegens de aanleg van de Flevoweg in 1956. De resten van ongeveer 28.000 mensen
+    werden overgebracht naar de Joodse begraafplaats in Diemen. Het deel van de begraafplaats
+    dat bleef ligt nu in het Flevopark. Er staan (nog) ongeveer 200 grafstenen.
+  Hint: 
+  Points: 100
+  MinValue: 100
+  MaxValue: 500
+  CorrectVlue: 200
+  Jump: 50
+  NegativePoints: 25
